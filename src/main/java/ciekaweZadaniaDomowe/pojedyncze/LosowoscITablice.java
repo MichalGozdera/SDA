@@ -1,13 +1,13 @@
 /**
- * ) Uzupe³nienie tablicy 20 elementowej losowymi liczbami z zakresu <0;100> (Do losowania polecam u¿yæ klasy Random)
- b) Znalezienie  najwiêkszego elementu tablicy
- c) Wyznaczenie œredniej arytmetycznej wartoœci zawartych w tablicy
- d) Zamiana wartoœci w tablicy wg nastêpuj¹cego schematu (do wykonania w ramach jednej pêtli):
- - jeœli liczba jest < 20 -> pomnó¿ razy 2
- - jeœli liczba jest podzielna przez 5 -> Dodaj 2
- - jeœli liczba jest == 50 -> podnieœ do potêgi 2
- - jeœli liczba jest > 80 -> odejmij od niej wartoœæ pierwszego elementu tablicy
- - UWAGA - mo¿e siê okazaæ ¿e dany element tablicy mo¿e spe³niaæ kilka warunków - wtedy nale¿y wykonaæ ka¿d¹ czynnoœæ, która jest przypisana do tych warunków, które spe³nia dana liczba
+ * ) UzupeÅ‚nienie tablicy 20 elementowej losowymi liczbami z zakresu <0;100> (Do losowania polecam uÅ¼yÄ‡ klasy Random)
+ b) Znalezienie  najwiÄ™kszego elementu tablicy
+ c) Wyznaczenie Å›redniej arytmetycznej wartoÅ›ci zawartych w tablicy
+ d) Zamiana wartoÅ›ci w tablicy wg nastÄ™pujÄ…cego schematu (do wykonania w ramach jednej pÄ™tli):
+ - jeÅ›li liczba jest < 20 -> pomnÃ³Å¼ razy 2
+ - jeÅ›li liczba jest podzielna przez 5 -> Dodaj 2
+ - jeÅ›li liczba jest == 50 -> podnieÅ› do potÄ™gi 2
+ - jeÅ›li liczba jest > 80 -> odejmij od niej wartoÅ›Ä‡ pierwszego elementu tablicy
+ - UWAGA - moÅ¼e siÄ™ okazaÄ‡ Å¼e dany element tablicy moÅ¼e speÅ‚niaÄ‡ kilka warunkÃ³w - wtedy naleÅ¼y wykonaÄ‡ kaÅ¼dÄ… czynnoÅ›Ä‡, ktÃ³ra jest przypisana do tych warunkÃ³w, ktÃ³re speÅ‚nia dana liczba
  */
 
 import java.util.Random;
@@ -19,7 +19,7 @@ public class LosowoscITablice {
         fillArray(tablica);
         printArray(tablica);
         System.out.println("Maksymalny element wynosi "+getMax(tablica));
-        System.out.println("Srednia z elementów wynosi "+srednia(tablica));
+        System.out.println("Srednia z elementÃ³w wynosi "+srednia(tablica));
         zamiana(tablica);
         printArray(tablica);
     }

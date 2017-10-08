@@ -47,6 +47,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Prostok¹t o boku "+width+" i drugim boku "+length+" i o powierzchni "+getArea()+" i obwodzie "+getPerimeter();
+        return "ProstokÄ…t o boku "+width+" i drugim boku "+length+" i o powierzchni "+getArea()+" i obwodzie "+getPerimeter();
     }
 }

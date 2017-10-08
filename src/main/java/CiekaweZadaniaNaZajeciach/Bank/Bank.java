@@ -34,11 +34,11 @@ public class Bank {
 
     public void nowyKlient() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Jak masz na imiê?");
+        System.out.println("Jak masz na imiÄ™?");
         String imie = s.next();
         for (Client klient : klienci.values()) {
             if (klient.getName().equals(imie)) {
-                System.out.println("Masz nastêpuj¹ce konta: " + klient.getKonta());
+                System.out.println("Masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                 return;
             }
         }
@@ -70,10 +70,10 @@ public class Bank {
         }
 
         setBalance(getBalance() + kasa);
-        System.out.println("Klient " + klient + " z³o¿y³ lokatê o wysokoœci " + kasa);
+        System.out.println("Klient " + klient + " zÅ‚oÅ¼yÅ‚ lokatÄ™ o wysokoÅ›ci " + kasa);
     }
 
-    public void udzielPo¿yczki(Client klient, double kasa) {
+    public void udzielPoÅ¼yczki(Client klient, double kasa) {
 
         for (Konto acc : klient.getKonta()) {
             if (acc.getType().equals("checking")) {
@@ -81,7 +81,7 @@ public class Bank {
             }
         }
         setBalance(getBalance() - kasa);
-        System.out.println("Klient " + klient + " wzi¹³ po¿yczkê o wysokoœci " + kasa);
+        System.out.println("Klient " + klient + " wziÄ…Å‚ poÅ¼yczkÄ™ o wysokoÅ›ci " + kasa);
 
     }
 
@@ -90,42 +90,42 @@ public class Bank {
         for (Konto acc : klient.getKonta()) {
             if (acc.getType().equals("saving")) {
                 if (acc.getBalance() < kasa) {
-                    System.out.println("Nie mo¿esz tyle wyj¹æ");
+                    System.out.println("Nie moÅ¼esz tyle wyjÄ…Ä‡");
                 } else {
                     acc.setBalance(acc.getBalance() - kasa);
                 }
             }
         }
         setBalance(getBalance() - kasa);
-        System.out.println("Klient " + klient + " zabra³ lokatê o wysokoœci " + kasa);
+        System.out.println("Klient " + klient + " zabraÅ‚ lokatÄ™ o wysokoÅ›ci " + kasa);
 
     }
 
-    public void zwrocPo¿yczke(Client klient, double kasa) {
+    public void zwrocPoÅ¼yczke(Client klient, double kasa) {
         for (Konto acc : klient.getKonta()) {
             if (acc.getType().equals("checking")) {
                 if ((0 - acc.getBalance()) > kasa) {
-                    System.out.println("Nie mo¿esz zwróciæ tyle pieniêdzy");
+                    System.out.println("Nie moÅ¼esz zwrÃ³ciÄ‡ tyle pieniÄ™dzy");
                 } else {
                     acc.setBalance(acc.getBalance() + kasa);
                 }
             }
         }
         setBalance(getBalance() + kasa);
-        System.out.println("Klient " + klient + " zwróci³ po¿yczke o wysokoœci " + kasa);
+        System.out.println("Klient " + klient + " zwrÃ³ciÅ‚ poÅ¼yczke o wysokoÅ›ci " + kasa);
     }
 
-    public void obs³uga(int ops) {
+    public void obsluga(int ops) {
 
         Scanner s = new Scanner(System.in);
         if (ops == 1) {
             nowyKlient();
         } else {
-            System.out.println("Podaj swoje imiê");
+            System.out.println("Podaj swoje imiÄ™");
             String imie = s.next();
             if (klienci.size() == 0) {
                 System.out.println("Nie znaleziono konta dla podanego imienia");
-                System.out.println("Czy chcesz za³o¿yæ u nas konto?\n1.Tak\n2.Nie");
+                System.out.println("Czy chcesz zaÅ‚oÅ¼yÄ‡ u nas konto?\n1.Tak\n2.Nie");
                 int ops2 = s.nextInt();
                 switch (ops2) {
                     case 1:
@@ -139,7 +139,7 @@ public class Bank {
             }
             for (Client klient : klienci.values()) {
                 if (klient.getName().equals(imie)) {
-                    System.out.println("Masz nastêpuj¹ce konta: " + klient.getKonta());
+                    System.out.println("Masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                     switch (ops) {
                         case 2:
                             Konto konto1 = klient.lastKonto();
@@ -150,48 +150,48 @@ public class Bank {
                             break;
                         case 3:
                             if (klient.isKonto("checking")) {
-                                System.out.println("Ile pieniêdzy chcesz zwróciæ?");
+                                System.out.println("Ile pieniÄ™dzy chcesz zwrÃ³ciÄ‡?");
                                 double kasa = s.nextDouble();
-                                zwrocPo¿yczke(klient, kasa);
-                                System.out.println("Teraz masz nastêpuj¹ce konta: " + klient.getKonta());
+                                zwrocPoÅ¼yczke(klient, kasa);
+                                System.out.println("Teraz masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                             } else {
-                                System.out.println("Nie masz konta do po¿yczek. Za³ó¿ takie");
+                                System.out.println("Nie masz konta do poÅ¼yczek. ZaÅ‚Ã³Å¼ takie");
                             }
                             break;
                         case 4:
                             if (klient.isKonto("saving")) {
-                                System.out.println("Ile pieniêdzy chcesz wyj¹æ?");
+                                System.out.println("Ile pieniÄ™dzy chcesz wyjÄ…Ä‡?");
                                 double kasa = s.nextDouble();
                                 wyjmijLokate(klient, kasa);
-                                System.out.println("Teraz masz nastêpuj¹ce konta: " + klient.getKonta());
+                                System.out.println("Teraz masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                             } else {
-                                System.out.println("Nie masz konta do lokat. Za³ó¿ takie");
+                                System.out.println("Nie masz konta do lokat. ZaÅ‚Ã³Å¼ takie");
                             }
                             break;
                         case 5:
                             if (klient.isKonto("checking")) {
-                                System.out.println("Ile pieniêdzy chcesz po¿yczyæ?");
+                                System.out.println("Ile pieniÄ™dzy chcesz poÅ¼yczyÄ‡?");
                                 double kasa = s.nextDouble();
-                                udzielPo¿yczki(klient, kasa);
-                                System.out.println("Teraz masz nastêpuj¹ce konta: " + klient.getKonta());
+                                udzielPoÅ¼yczki(klient, kasa);
+                                System.out.println("Teraz masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                             } else {
-                                System.out.println("Nie masz konta do po¿yczek. Za³ó¿ takie");
+                                System.out.println("Nie masz konta do poÅ¼yczek. ZaÅ‚Ã³Å¼ takie");
                             }
                             break;
                         case 6:
                             if (klient.isKonto("saving")) {
-                                System.out.println("Ile pieniêdzy chcesz z³o¿yæ na lokacie");
+                                System.out.println("Ile pieniÄ™dzy chcesz zÅ‚oÅ¼yÄ‡ na lokacie");
                                 double kasa = s.nextDouble();
                                 przyjmijLokate(klient, kasa);
-                                System.out.println("Teraz masz nastêpuj¹ce konta: " + klient.getKonta());
+                                System.out.println("Teraz masz nastÄ™pujÄ…ce konta: " + klient.getKonta());
                             } else {
-                                System.out.println("Nie masz konta do lokat. Za³ó¿ takie");
+                                System.out.println("Nie masz konta do lokat. ZaÅ‚Ã³Å¼ takie");
                             }
                             break;
                     }
                 } else {
                     System.out.println("Nie znaleziono konta dla podanego imienia");
-                    System.out.println("Czy chcesz za³o¿yæ u nas konto?\n1.Tak\n2.Nie");
+                    System.out.println("Czy chcesz zaÅ‚oÅ¼yÄ‡ u nas konto?\n1.Tak\n2.Nie");
                     int ops2 = s.nextInt();
                     switch (ops2) {
                         case 1:
@@ -212,7 +212,7 @@ public class Bank {
                 for (Konto acc : klient.getKonta()) {
                     //if ((acc.getType().equals("saving") && acc.getBalance() > 0) || (acc.getType().equals("checking") && acc.getBalance() < 0)) {
                     double odsetki = acc.getBalance() * (rate / 100);
-                    System.out.println("Naliczono odsetki dla konta " + acc + " nale¿¹cego do klienta " + klient + " w wysokoœci " + odsetki);
+                    System.out.println("Naliczono odsetki dla konta " + acc + " naleÅ¼Ä…cego do klienta " + klient + " w wysokoÅ›ci " + odsetki);
                     acc.setBalance(acc.getBalance() + odsetki);
                     setBalance(getBalance() + odsetki);
                     System.out.println("Stan skarbca banku wynosi teraz " + getBalance());
@@ -225,6 +225,6 @@ public class Bank {
 
     @Override
     public String toString() {
-        return "Bank o nazwie " + name + " o stanie skarbca równym " + balance;
+        return "Bank o nazwie " + name + " o stanie skarbca rÃ³wnym " + balance;
     }
 }

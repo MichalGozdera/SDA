@@ -1,12 +1,12 @@
 package CiekaweZadaniaNaZajeciach.pojedyncze;
 
 /**
- * operacje na listach (po ka¿dym punkcie wyœwietlamy)
- wype³niamy listê kolejnymi wartoœciami od 1 do 10
- co trzeci¹ liczbê zwiêkszamy o wartoœæ jej poprzednika
- ka¿d¹ liczbê parzyst¹ dzielimy przez 2
+ * operacje na listach (po kaÅ¼dym punkcie wyÅ›wietlamy)
+ wypeÅ‚niamy listÄ™ kolejnymi wartoÅ›ciami od 1 do 10
+ co trzeciÄ… liczbÄ™ zwiÄ™kszamy o wartoÅ›Ä‡ jej poprzednika
+ kaÅ¼dÄ… liczbÄ™ parzystÄ… dzielimy przez 2
  sumujemy wszystkie liczby z listy
- Znajdujemy najwiêkszy i najmniejszy element listy
+ Znajdujemy najwiÄ™kszy i najmniejszy element listy
 
  */
 
@@ -30,8 +30,8 @@ public class ListyZadanie {
         parzysteDzielimyPrzez2(listaLosowa);
         System.out.println(lista1);
         System.out.println(listaLosowa);
-        System.out.println("Suma elementów listy1 wynosi: "+sumaElementów(lista1));
-        System.out.println("Suma elementów listy losowej wynosi: "+sumaElementów(listaLosowa));
+        System.out.println("Suma elementÃ³w listy1 wynosi: "+sumaElementÃ³w(lista1));
+        System.out.println("Suma elementÃ³w listy losowej wynosi: "+sumaElementÃ³w(listaLosowa));
         System.out.println("Minimalny element listy1 wynosi "+min(lista1));
         System.out.println("Minimalny element listy losowej wynosi "+min(listaLosowa));
         System.out.println("Maksymalny element listy1 wynosi "+max(lista1));
@@ -60,7 +60,7 @@ public class ListyZadanie {
             }
         }
     }
-    private static int sumaElementów (List<Integer>list){
+    private static int sumaElementÃ³w (List<Integer>list){
         int suma=0;
         for (int liczba:list){
             suma+=liczba;

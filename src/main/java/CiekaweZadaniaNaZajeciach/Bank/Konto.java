@@ -35,7 +35,7 @@ public class Konto {
 
     @Override
     public String toString() {
-        return "Konto o numerze " + nrkonta+ " typu "+type+" o bilansie równym "+balance;
+        return "Konto o numerze " + nrkonta+ " typu "+type+" o bilansie rÃ³wnym "+balance;
 
     }
 }

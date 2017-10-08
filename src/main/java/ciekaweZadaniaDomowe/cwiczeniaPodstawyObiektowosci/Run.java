@@ -5,11 +5,11 @@ public class Run {
 //Cylinder walec = new Cylinder();
 //        System.out.println(walec.getVolume());
 //        System.out.println(walec.toString());
-//        Cylinder walec1=new Cylinder(2,"¿ó³ty",2137);
+//        Cylinder walec1=new Cylinder(2,"Å¼Ã³Å‚ty",2137);
 //        System.out.println(walec1.getVolume());
 //        System.out.println(walec1.toString());
 
-        Circle kolko1=new Circle(1,"¿ó³ty",true);
+        Circle kolko1=new Circle(1,"Å¼Ã³Å‚ty",true);
         System.out.println(kolko1.getArea());
         System.out.println(kolko1.getPerimeter());
         System.out.println(kolko1);

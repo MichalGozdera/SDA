@@ -6,18 +6,18 @@ public class ArrayList1 {
         odwroc(lista1);
         System.out.println(mieszaj(lista1));
         List lista2 = nowaLista(2);
-        System.out.println("Wszystkie elementy listy 1 znajduj¹ siê na liœcie 2 " +takieSame(lista1, lista2));
+        System.out.println("Wszystkie elementy listy 1 znajdujÄ… siÄ™ na liÅ›cie 2 " +takieSame(lista1, lista2));
 
 
 
-/*      //1) napisz program, który odwróci ArrayList - przyk³ad: [0, 5, 9, 1, 2], wynik: [2, 1, 9, 5, 0]
+/*      //1) napisz program, ktÃ³ry odwrÃ³ci ArrayList - przykÅ‚ad: [0, 5, 9, 1, 2], wynik: [2, 1, 9, 5, 0]
         Collections.reverse(lista);
-        System.out.println("Odwrócona lista to " + lista);
-        //2) napisz program, który pomiesza elementy na ArrayList - przyk³ad: [0, 6, 2, 4, 9, 7], wynik(losowa kolejnoœæ liczb, za ka¿dym razem wynik powinien byæ inny): [2, 0, 7, 9, 6, 4]
+        System.out.println("OdwrÃ³cona lista to " + lista);
+        //2) napisz program, ktÃ³ry pomiesza elementy na ArrayList - przykÅ‚ad: [0, 6, 2, 4, 9, 7], wynik(losowa kolejnoÅ›Ä‡ liczb, za kaÅ¼dym razem wynik powinien byÄ‡ inny): [2, 0, 7, 9, 6, 4]
         Collections.shuffle(lista);
         System.out.println(lista);
         System.out.println("Pomieszana lista to " + lista);
-        //3) napisz program, który sprawdzi czy dwie ArrayListy posiadaj¹ takie same wartoœci - listy mog¹ byæ ró¿nej d³ugoœci
+        //3) napisz program, ktÃ³ry sprawdzi czy dwie ArrayListy posiadajÄ… takie same wartoÅ›ci - listy mogÄ… byÄ‡ rÃ³Å¼nej dÅ‚ugoÅ›ci
         List<Integer> lista2 = new ArrayList<Integer>(); //inicjalizacja kolejnej listy
         losowy = r.nextInt(10);
         for (int i = 0; i < losowy; i++) {
@@ -25,12 +25,12 @@ public class ArrayList1 {
             lista2.add(s.nextInt());
         }
         if (lista.containsAll(lista2) || lista2.containsAll(lista))
-            System.out.println("Listy posiadaj¹ takie same wartoœci");
+            System.out.println("Listy posiadajÄ… takie same wartoÅ›ci");
         else
-            System.out.println("Listy nie maj¹ takich samych wartoœci");*/
+            System.out.println("Listy nie majÄ… takich samych wartoÅ›ci");*/
     }
 
-    //1) napisz program, który odwróci ArrayList - przyk³ad: [0, 5, 9, 1, 2], wynik: [2, 1, 9, 5, 0]
+    //1) napisz program, ktÃ³ry odwrÃ³ci ArrayList - przykÅ‚ad: [0, 5, 9, 1, 2], wynik: [2, 1, 9, 5, 0]
     public static <T> void odwroc(List<T> listaa) {
         for (int j = 0; j < listaa.size() / 2; j++) {
             T o = listaa.get(j);
@@ -40,7 +40,7 @@ public class ArrayList1 {
         System.out.println("Odwrocona lista to " + listaa);
     }
 
-    /*2) napisz program, który pomiesza elementy na ArrayList - przyk³ad: [0, 6, 2, 4, 9, 7], wynik(losowa kolejnoœæ liczb, za ka¿dym razem wynik powinien byæ inny): [2, 0, 7, 9, 6, 4]*/
+    /*2) napisz program, ktÃ³ry pomiesza elementy na ArrayList - przykÅ‚ad: [0, 6, 2, 4, 9, 7], wynik(losowa kolejnoÅ›Ä‡ liczb, za kaÅ¼dym razem wynik powinien byÄ‡ inny): [2, 0, 7, 9, 6, 4]*/
     public static <T> List<T> mieszaj(List<T> listab) {
         Random r = new Random();
         for (int j = 0; j < listab.size(); j++) {
@@ -68,9 +68,9 @@ public class ArrayList1 {
         }
         return lista;
     }
-    //3) napisz program, który sprawdzi czy dwie ArrayListy posiadaj¹ takie same wartoœci - listy mog¹ byæ ró¿nej d³ugoœci
+    //3) napisz program, ktÃ³ry sprawdzi czy dwie ArrayListy posiadajÄ… takie same wartoÅ›ci - listy mogÄ… byÄ‡ rÃ³Å¼nej dÅ‚ugoÅ›ci
 
-    public static boolean takieSame(List<?> listaA, List<?> listaB)  //Metoda sprawdza czy wszystkie wartoœci z listy A znajduj¹ siê na liœcie B
+    public static boolean takieSame(List<?> listaA, List<?> listaB)  //Metoda sprawdza czy wszystkie wartoÅ›ci z listy A znajdujÄ… siÄ™ na liÅ›cie B
     {
         boolean cyngiel=false;
         for (Object o : listaA) {

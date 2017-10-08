@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PrimeNumbers {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Do jakiej liczby mam podaæ liczby pierwsze ?");
+        System.out.println("Do jakiej liczby mam podaÄ‡ liczby pierwsze ?");
         int noPrimes = s.nextInt();
         long starttime = System.currentTimeMillis();
         wyswietlListe(primes(noPrimes));

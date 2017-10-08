@@ -2,9 +2,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * 2. Nale¿y napisaæ program, który bêdzie wczytywa³ kolejno wartoœci do tablicy - wartoœci maj¹ byæ podawane przez u¿ytkownika
- * - APLIKACJA NIE MO¯E siê zamkn¹æ, dopóki u¿ytkownik nie poda 5 poprawnych liczb.
- * W przypadku podania ³añcucha nie bêd¹cego liczb¹ nale¿y poinformowaæ u¿ytkownika o b³êdzie i poprosiæ o podanie kolejnej liczby.
+ * 2. NaleÅ¼y napisaÄ‡ program, ktÃ³ry bÄ™dzie wczytywaÅ‚ kolejno wartoÅ›ci do tablicy - wartoÅ›ci majÄ… byÄ‡ podawane przez uÅ¼ytkownika
+ * - APLIKACJA NIE MOÅ»E siÄ™ zamknÄ…Ä‡, dopÃ³ki uÅ¼ytkownik nie poda 5 poprawnych liczb.
+ * W przypadku podania Å‚aÅ„cucha nie bÄ™dÄ…cego liczbÄ… naleÅ¼y poinformowaÄ‡ uÅ¼ytkownika o bÅ‚Ä™dzie i poprosiÄ‡ o podanie kolejnej liczby.
  */
 
 public class wczytywanieLiczbCalkowitych {

@@ -4,14 +4,14 @@ package ciekaweZadaniaDomowe.cwiczeniaTabliceIInnePodstawy;
 import java.util.Scanner;
 
 public class Zad12
-//12. Napisz funkcjê, która przet³umaczy wybran¹ liczbê ca³kowit¹ z zakresu <0-999>, na jej odpowiednik s³ownie np. 123 -> sto dwadzieœcia trzy.
+//12. Napisz funkcjÄ™, ktÃ³ra przetÅ‚umaczy wybranÄ… liczbÄ™ caÅ‚kowitÄ… z zakresu <0-999>, na jej odpowiednik sÅ‚ownie np. 123 -> sto dwadzieÅ›cia trzy.
 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Wczytaj liczbê z zakresu <0-999>");
+        System.out.println("Wczytaj liczbÄ™ z zakresu <0-999>");
         int liczba = s.nextInt();
         while (liczba < 0 || liczba > 999) {
-            System.out.println("Wczytaj liczbê z zakresu <0-999>");
+            System.out.println("Wczytaj liczbÄ™ z zakresu <0-999>");
             liczba = s.nextInt();
         }
         if (liczba==0)
@@ -24,7 +24,7 @@ public class Zad12
                 liczba -= setki * 100;
                 break;
             case 2:
-                System.out.print("dwieœcie ");
+                System.out.print("dwieÅ›cie ");
                 liczba -= setki * 100;
                 break;
             case 3:
@@ -36,11 +36,11 @@ public class Zad12
                 liczba -= setki * 100;
                 break;
             case 5:
-                System.out.print("piêæset ");
+                System.out.print("piÄ™Ä‡set ");
                 liczba -= setki * 100;
                 break;
             case 6:
-                System.out.print("szeœæset ");
+                System.out.print("szeÅ›Ä‡set ");
                 liczba -= setki * 100;
                 break;
             case 7:
@@ -52,7 +52,7 @@ public class Zad12
                 liczba -= setki * 100;
                 break;
             case 9:
-                System.out.print("dziewiêæset ");
+                System.out.print("dziewiÄ™Ä‡set ");
                 liczba -= setki * 100;
                 break;
 
@@ -61,74 +61,74 @@ public class Zad12
             switch (liczba)
             {
                 case 10:
-                    System.out.print("dziesiêæ");
+                    System.out.print("dziesiÄ™Ä‡");
                     break;
                 case 11:
-                    System.out.print("jedenaœcie");
+                    System.out.print("jedenaÅ›cie");
                     break;
                 case 12:
-                    System.out.print("dwanaœcie");
+                    System.out.print("dwanaÅ›cie");
                     break;
                 case 13:
-                    System.out.print("trzynaœcie");
+                    System.out.print("trzynaÅ›cie");
                     break;
                 case 14:
-                    System.out.print("czternaœcie");
+                    System.out.print("czternaÅ›cie");
                     break;
                 case 15:
-                    System.out.print("piêtnaœcie");
+                    System.out.print("piÄ™tnaÅ›cie");
                     break;
                 case 16:
-                    System.out.print("szesnaœcie");
+                    System.out.print("szesnaÅ›cie");
                     break;
                 case 17:
-                    System.out.print("siedemnaœcie");
+                    System.out.print("siedemnaÅ›cie");
                     break;
                 case 18:
-                    System.out.print("osiemnaœcie");
+                    System.out.print("osiemnaÅ›cie");
                     break;
                 case 19:
-                    System.out.print("dziewiêtnaœcie");
+                    System.out.print("dziewiÄ™tnaÅ›cie");
                     break;
             }
         }
         else
             {
-            int dziesi¹tki=liczba/10;
+            int dziesiatki=liczba/10;
 
-            switch (dziesi¹tki)
+            switch (dziesiatki)
             {
                 case 2:
-                    System.out.print("dwadzieœcia ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("dwadzieÅ›cia ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 3:
-                    System.out.print ("trzydzieœci ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print ("trzydzieÅ›ci ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 4:
-                    System.out.print ("czterdzieœci ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print ("czterdzieÅ›ci ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 5:
-                    System.out.print("piêædziesi¹t ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("piÄ™Ä‡dziesiÄ…t ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 6:
-                    System.out.print("szeœædziesi¹t ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("szeÅ›Ä‡dziesiÄ…t ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 7:
-                    System.out.print("siedemdziesi¹t ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("siedemdziesiÄ…t ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 8:
-                    System.out.print("osiemdziesi¹t ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("osiemdziesiÄ…t ");
+                    liczba-=dziesiatki*10;
                     break;
                 case 9:
-                    System.out.print("dziewiêædziesi¹t ");
-                    liczba-=dziesi¹tki*10;
+                    System.out.print("dziewiÄ™Ä‡dziesiÄ…t ");
+                    liczba-=dziesiatki*10;
                     break;
             }
         }
@@ -146,10 +146,10 @@ switch (liczba) {
         System.out.print("cztery");
         break;
     case 5:
-        System.out.print("piêæ");
+        System.out.print("piÄ™Ä‡");
         break;
     case 6:
-        System.out.print("szeœæ");
+        System.out.print("szeÅ›Ä‡");
         break;
     case 7:
         System.out.print("siedem");
@@ -158,7 +158,7 @@ switch (liczba) {
         System.out.print("osiem");
         break;
     case 9:
-        System.out.print("dziewiêæ");
+        System.out.print("dziewiÄ™Ä‡");
         break;
 }
     }

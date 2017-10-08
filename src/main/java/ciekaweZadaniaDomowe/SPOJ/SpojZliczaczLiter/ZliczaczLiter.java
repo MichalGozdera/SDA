@@ -1,27 +1,27 @@
 /*
 JZLICZ - Zliczacz liter
-Ko³o M³odych Mi³oœników £amania Szyfrów pracuje nad odszyfrowaniem pewnego staro¿ytnego manuskryptu. J¹drem systemu ma byæ samoucz¹cy siê analizator tekstu, a jego pierwszym modu³em ma byæ "zliczacz liter", którego opracowanie powierzono Tobie.
+KoÅ‚o MÅ‚odych MiÅ‚oÅ›nikÃ³w Åamania SzyfrÃ³w pracuje nad odszyfrowaniem pewnego staroÅ¼ytnego manuskryptu. JÄ…drem systemu ma byÄ‡ samouczÄ…cy siÄ™ analizator tekstu, a jego pierwszym moduÅ‚em ma byÄ‡ "zliczacz liter", ktÃ³rego opracowanie powierzono Tobie.
 
-Opracuj program ZLI, który:
-- wczyta ze standardowego wejœcia tekst do analizy,
-- dla ka¿dej litery obliczy liczbê jej wyst¹pieñ w tekœcie,
-- wypisze wynik na standardowe wyjœcie.
+Opracuj program ZLI, ktÃ³ry:
+- wczyta ze standardowego wejÅ›cia tekst do analizy,
+- dla kaÅ¼dej litery obliczy liczbÄ™ jej wystÄ…pieÅ„ w tekÅ›cie,
+- wypisze wynik na standardowe wyjÅ›cie.
 
-Wejœcie
-W pierwszym wierszu N - liczba wierszy tekstu do analizy (N ? 150). W ka¿dym z nastêpuj¹cych N wierszy ci¹g z³o¿ony z maksymalnie 200 znaków spoœród ma³ych i wielkich liter alfabetu ³aciñskiego ('a'..'z', 'A'..'Z') oraz spacji.
+WejÅ›cie
+W pierwszym wierszu N - liczba wierszy tekstu do analizy (N ? 150). W kaÅ¼dym z nastÄ™pujÄ…cych N wierszy ciÄ…g zÅ‚oÅ¼ony z maksymalnie 200 znakÃ³w spoÅ›rÃ³d maÅ‚ych i wielkich liter alfabetu Å‚aciÅ„skiego ('a'..'z', 'A'..'Z') oraz spacji.
 
-Wyjœcie
-W kolejnych wierszach litery od 'a' do 'z' i od 'A' do 'Z' w tej kolejnoœci, a po ka¿dej literze spacja i liczba wskazuj¹ca, ile razy ta litera wyst¹pi³a w tekœcie.
+WyjÅ›cie
+W kolejnych wierszach litery od 'a' do 'z' i od 'A' do 'Z' w tej kolejnoÅ›ci, a po kaÅ¼dej literze spacja i liczba wskazujÄ…ca, ile razy ta litera wystÄ…piÅ‚a w tekÅ›cie.
 
-Uwaga: Pomiñ litery, które nie wystêpuj¹ w tekœcie.
+Uwaga: PomiÅ„ litery, ktÃ³re nie wystÄ™pujÄ… w tekÅ›cie.
 
-Przyk³ad
-Wejœcie:
+PrzykÅ‚ad
+WejÅ›cie:
 2
 ala ma kota
 Ola ma psa
 
-Wyjœcie:
+WyjÅ›cie:
 a 7
 k 1
 l 2

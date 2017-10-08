@@ -1,15 +1,15 @@
 /*
 CALC - Kalkulator
-Napisz program, ktÛry dzia≥a jak prosty kalkulator obs≥ugujπcy piÍÊ operacji: dodawanie, odejmowanie, mnoøenie, dzielenie i obliczanie reszty z dzielenia liczb ca≥kowitych.
+Napisz program, kt√≥ry dzia≈Ça jak prosty kalkulator obs≈ÇugujƒÖcy piƒôƒá operacji: dodawanie, odejmowanie, mno≈ºenie, dzielenie i obliczanie reszty z dzielenia liczb ca≈Çkowitych.
 
-Wejúcie
-Na wejúcie programu podana zostanie pewna nieokreúlona liczba zestawÛw danych. Zestawy sk≥adajπ siÍ z jednoznakowego symbolu operacji do wykonania (+ dodawanie, - odejmowanie,
-* mnoøenie, / dzielenie ca≥kowitoliczbowe, % reszta z dzielenia) oraz nastÍpujπcych po nim dwÛch liczb ca≥kowitych. PoszczegÛlne sk≥adowe zestawu zostanπ rozdzielone spacjami,
-* a same zestawy znakiem nowej linii. Liczba testÛw nie przekracza 100, wynik zawiera siÍ w typie int32.
+Wej≈õcie
+Na wej≈õcie programu podana zostanie pewna nieokre≈õlona liczba zestaw√≥w danych. Zestawy sk≈ÇadajƒÖ siƒô z jednoznakowego symbolu operacji do wykonania (+ dodawanie, - odejmowanie,
+* mno≈ºenie, / dzielenie ca≈Çkowitoliczbowe, % reszta z dzielenia) oraz nastƒôpujƒÖcych po nim dw√≥ch liczb ca≈Çkowitych. Poszczeg√≥lne sk≈Çadowe zestawu zostanƒÖ rozdzielone spacjami,
+* a same zestawy znakiem nowej linii. Liczba test√≥w nie przekracza 100, wynik zawiera siƒô w typie int32.
 
-Wyjúcie
-Na wyjúciu programu ma siÍ pojawiÊ ciπg liczb bÍdπcych rezultatem wykonania pojawiajπcych siÍ na wejúciu poleceÒ. PoszczegÛlne liczby naleøy rozdzieliÊ znakami nowej linii.
- Uwaga! Moøna za≥oøyÊ, øe dane wejúciowe nie zawierajπ polecenia dzielenia przez 0.
+Wyj≈õcie
+Na wyj≈õciu programu ma siƒô pojawiƒá ciƒÖg liczb bƒôdƒÖcych rezultatem wykonania pojawiajƒÖcych siƒô na wej≈õciu polece≈Ñ. Poszczeg√≥lne liczby nale≈ºy rozdzieliƒá znakami nowej linii.
+ Uwaga! Mo≈ºna za≈Ço≈ºyƒá, ≈ºe dane wej≈õciowe nie zawierajƒÖ polecenia dzielenia przez 0.
  */
 
 import com.sun.deploy.util.ArrayUtil;
@@ -28,7 +28,7 @@ public class Calc {
             System.out.println(line);
             String[] dane = line.split("\\s");
             if (dane.length > 3) {
-                System.out.println("Wczytano za duøo zmiennych");
+                System.out.println("Wczytano za du≈ºo zmiennych");
                 return;
             }
             int liczba1 = 0;
@@ -37,7 +37,7 @@ public class Calc {
                 liczba1 = Integer.parseInt(dane[1]);
                 liczba2 = Integer.parseInt(dane[2]);
             } catch (NumberFormatException e) {
-                System.out.println("Z≥e dane wejúciowe");
+                System.out.println("Z≈Çe dane wej≈õciowe");
             }
             switch (dane[0]) {
                 case "+":
@@ -47,7 +47,7 @@ public class Calc {
                     System.out.println("Rezultat odejmowania " + dane[1] + " i " + dane[2] + " wynosi " + (liczba1 - liczba2));
                     break;
                 case "*":
-                    System.out.println("Rezultat mnoøenia " + dane[1] + " i " + dane[2] + " wynosi " + (liczba1 * liczba2));
+                    System.out.println("Rezultat mno≈ºenia " + dane[1] + " i " + dane[2] + " wynosi " + (liczba1 * liczba2));
                     break;
                 case "/":
                     if (liczba2!=0) {
@@ -66,7 +66,7 @@ public class Calc {
                     }
                     break;
                 default:
-                    System.out.println("Niepoprawne dzia≥anie");
+                    System.out.println("Niepoprawne dzia≈Çanie");
                     continue;
             }
 

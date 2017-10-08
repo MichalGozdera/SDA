@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Podaj który element ci¹gu Fibonacciego mam wyœwietliæ?");
-        String liczbaElementów = s.nextLine();
+        System.out.println("Podaj ktÃ³ry element ciÄ…gu Fibonacciego mam wyÅ›wietliÄ‡?");
+        String liczbaElementÃ³w = s.nextLine();
         int ntaLiczba = 1;
         int iminus1 = 1;
         int iminus2 = 1;
         try {
-            Integer ilosc = Integer.parseInt(liczbaElementów);
+            Integer ilosc = Integer.parseInt(liczbaElementÃ³w);
             if (ilosc >= 0) {
                 for (int i = 0; i <= ilosc; i++) {
                     if (i == 1 || i == 0) {
@@ -30,9 +30,9 @@ public class Fibonacci {
                 System.out.println("Nie ma ujemnych liczb Fibonacciego");
             }
         } catch (NumberFormatException e) {
-            System.out.println("Poda³eœ coœ co nie jest liczb¹");
+            System.out.println("PodaÅ‚eÅ› coÅ› co nie jest liczbÄ…");
         }
-        System.out.println("Ile elementów ci¹gu fibonacciego mam wyœwietliæ ?");
+        System.out.println("Ile elementÃ³w ciÄ…gu fibonacciego mam wyÅ›wietliÄ‡ ?");
         int ileFibo = s.nextInt();
         wyswietlListe(fibo(ileFibo));
 

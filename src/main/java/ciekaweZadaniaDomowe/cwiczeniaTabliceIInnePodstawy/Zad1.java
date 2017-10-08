@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Zad1
 /*
-1. Napisz funkcjê, która przyjmuje dwie tablice jako argumenty. Je¿eli na obu tablicach wystêpuje ten sam element, funkcja powinna zwracaæ true, w przeciwnym wypadku false.
+1. Napisz funkcjÄ™, ktÃ³ra przyjmuje dwie tablice jako argumenty. JeÅ¼eli na obu tablicach wystÄ™puje ten sam element, funkcja powinna zwracaÄ‡ true, w przeciwnym wypadku false.
  */ {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Jak wielka ma byæ pierwsza tablica?");
+        System.out.println("Jak wielka ma byÄ‡ pierwsza tablica?");
         int tab1Wielkosc = s.nextInt();
-        System.out.println("Jak wielka ma byæ druga tablica?");
+        System.out.println("Jak wielka ma byÄ‡ druga tablica?");
         int tab2Wielkosc = s.nextInt();
         int[] tab1 = new int[tab1Wielkosc];
         int[] tab2 = new int[tab2Wielkosc];
@@ -20,8 +20,8 @@ public class Zad1
         System.out.println("Wczytujemy elementy tablicy 2");
         for (int i = 0; i < tab2.length; i++)
             tab2[i] = s.nextInt();
-        Zad1 zadanie = new Zad1(); //tworzymy nowy obiekt klasy zad1 by na nim wywo³aæ funkcjê.
-        System.out.println(zadanie.theSame(tab1, tab2)); //wywo³ujemy funkcjê podan¹ w zadaniu
+        Zad1 zadanie = new Zad1(); //tworzymy nowy obiekt klasy zad1 by na nim wywoÅ‚aÄ‡ funkcjÄ™.
+        System.out.println(zadanie.theSame(tab1, tab2)); //wywoÅ‚ujemy funkcjÄ™ podanÄ… w zadaniu
     }
 
 
@@ -30,7 +30,7 @@ public class Zad1
         {
             for (int j = 0; j < tab2.length; j++) //iteracja po drugiej tablicy
             {
-                if (tab1[i] == tab2[j]) //warunek sprawdzaj¹cy czy jakiœ element powtarza siê.
+                if (tab1[i] == tab2[j]) //warunek sprawdzajÄ…cy czy jakiÅ› element powtarza siÄ™.
                     return true;
             }
         }

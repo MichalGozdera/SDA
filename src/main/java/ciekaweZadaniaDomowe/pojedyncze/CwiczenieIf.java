@@ -7,31 +7,31 @@ public class CwiczenieIf {
         int y = 10;
         int z = 15;
 
-        //1. Napisz warunek sprawdzaj¹cy, czy x jest wiêksze od y.
+        //1. Napisz warunek sprawdzajÄ…cy, czy x jest wiÄ™ksze od y.
         if (x > y) {
-            System.out.println(x + " jest wiêksze od " + y);
+            System.out.println(x + " jest wiÄ™ksze od " + y);
         }
-        //2. Napisz warunek sprawdzaj¹cy, czy podwojona wartoœæ x jest równa y.
+        //2. Napisz warunek sprawdzajÄ…cy, czy podwojona wartoÅ›Ä‡ x jest rÃ³wna y.
         if (x * 2 == y) {
-            System.out.println(2 * x + " jest równe " + y);
+            System.out.println(2 * x + " jest rÃ³wne " + y);
         }
-        //3. Napisz warunek sprawdzaj¹cy, czy suma x oraz y równa siê z.
+        //3. Napisz warunek sprawdzajÄ…cy, czy suma x oraz y rÃ³wna siÄ™ z.
         if ((x + y) == z) {
-            System.out.println((x + y) + " jest równe " + z);
+            System.out.println((x + y) + " jest rÃ³wne " + z);
         }
-        //4. Napisz warunek sprawdzaj¹cy, czy ró¿nica z oraz y równa jest x.
+        //4. Napisz warunek sprawdzajÄ…cy, czy rÃ³Å¼nica z oraz y rÃ³wna jest x.
         if (z - y == x) {
-            System.out.println((z - y) + " jest równe " + x);
+            System.out.println((z - y) + " jest rÃ³wne " + x);
         }
-        //5. SprawdŸ, czy negacja warunku: potrojonej wartoœci x równej z + 1 zwraca prawdê czy fa³sz?
+        //5. SprawdÅº, czy negacja warunku: potrojonej wartoÅ›ci x rÃ³wnej z + 1 zwraca prawdÄ™ czy faÅ‚sz?
         if (!(3 * x == z + 1)) {
             System.out.println(!(3 * x == z + 1));
         }
-        //6. Jaki wynik (prawdê lub fa³sz) zwróci ró¿nica liczb z, y, x? Fa³sz reprezentowany jest przez jak¹ liczbê?
+        //6. Jaki wynik (prawdÄ™ lub faÅ‚sz) zwrÃ³ci rÃ³Å¼nica liczb z, y, x? FaÅ‚sz reprezentowany jest przez jakÄ… liczbÄ™?
 
-        //7. SprawdŸ, czy liczba x jest sta³o- czy zmiennoprzecinkowa?
+        //7. SprawdÅº, czy liczba x jest staÅ‚o- czy zmiennoprzecinkowa?
         if (x == (int) x) {
-            System.out.println(x + " jest sta³oprzecinkowa");
+            System.out.println(x + " jest staÅ‚oprzecinkowa");
         } else {
             System.out.println(x + " jest zmiennoprzecinkowa");
         }
@@ -42,15 +42,15 @@ public class CwiczenieIf {
         if (o.getClass().getSimpleName().equals("Double")||o.getClass().getSimpleName().equals("Float")) {
             System.out.println(x + " jest zmiennoprzecinkowa");
     } else {
-            System.out.println(x + " jest sta³oprzecinkowa");
+            System.out.println(x + " jest staÅ‚oprzecinkowa");
         }
-        //8. Napisz warunek sprawdzaj¹cy czy iloczyn x jest wiêkszy od ilorazu z oraz x powiêkszonego o 1.
+        //8. Napisz warunek sprawdzajÄ…cy czy iloczyn x jest wiÄ™kszy od ilorazu z oraz x powiÄ™kszonego o 1.
         if (x * z > z / x + 1) {
-            System.out.println("iloczyn " + x + " jest wiêkszy od ilorazu " + z + " oraz " + x + " powiêkszonego o 1 ");
+            System.out.println("iloczyn " + x + " jest wiÄ™kszy od ilorazu " + z + " oraz " + x + " powiÄ™kszonego o 1 ");
         }
-        //9. SprawdŸ, czy kwadrat liczby y równy jest równy sumie iloczynu x oraz y i kwadratu liczby x.
+        //9. SprawdÅº, czy kwadrat liczby y rÃ³wny jest rÃ³wny sumie iloczynu x oraz y i kwadratu liczby x.
         if (y * y == x * y + x * x) {
-            System.out.println("kwadrat liczby " + y + " równy jest równy sumie iloczynu " + x + " oraz " + y + "i kwadratu liczby " + x);
+            System.out.println("kwadrat liczby " + y + " rÃ³wny jest rÃ³wny sumie iloczynu " + x + " oraz " + y + "i kwadratu liczby " + x);
         }
 
     }

@@ -5,7 +5,7 @@ public class Totolotek {
 
 
     public static void main(String[] args) {
-        Set<Integer> zwyciêskie = losuj();
+        Set<Integer> zwycieskie = losuj();
         Set<Integer> losowe = null;
         switch (choice()) {
             case 1:
@@ -16,10 +16,10 @@ public class Totolotek {
                 break;
 
         }
-        System.out.println("Poda³eœ nastêpuj¹ce liczby" + losowe);
-        wygrana(zwyciêskie, losowe);
-        System.out.println("Zwyciêskie liczby to " + zwyciêskie);
-        System.out.println("z takimi liczbami wygra³byœ szóstkê dopiero w " + iloscLosowan(losowe) + " losowaniu");
+        System.out.println("PodaÅ‚eÅ› nastÄ™pujÄ…ce liczby" + losowe);
+        wygrana(zwycieskie, losowe);
+        System.out.println("ZwyciÄ™skie liczby to " + zwycieskie);
+        System.out.println("z takimi liczbami wygraÅ‚byÅ› szÃ³stkÄ™ dopiero w " + iloscLosowan(losowe) + " losowaniu");
 
     }
     public static Set<Integer> losuj() {
@@ -36,14 +36,14 @@ public class Totolotek {
 
     public static int choice() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Wybierz 1 by wprowadziæ w³asne liczby albo 2 by zagraæ na chybi³ trafi³.");
+        System.out.println("Wybierz 1 by wprowadziÄ‡ wÅ‚asne liczby albo 2 by zagraÄ‡ na chybiÅ‚ trafiÅ‚.");
         switch (s.nextInt()) {
             case 1:
                 return 1;
             case 2:
                 return 2;
             default:
-                System.out.println("Wracaj do podstawówki uczyæ siê czytaæ\n Gramy na chybi³ trafi³");
+                System.out.println("Wracaj do podstawÃ³wki uczyÄ‡ siÄ™ czytaÄ‡\n Gramy na chybiÅ‚ trafiÅ‚");
                 return 2;
         }
     }
@@ -52,10 +52,10 @@ public class Totolotek {
         Scanner s = new Scanner(System.in);
         Set<Integer> zestaw = new TreeSet<>();
         for (int i = 0; i < 6; i++) {
-            System.out.println("Wczytaj " + (i + 1) + " liczbê");
+            System.out.println("Wczytaj " + (i + 1) + " liczbÄ™");
             int liczba = s.nextInt();
             while (liczba > 49 || liczba < 1 || zestaw.contains(liczba)) {
-                System.out.println("Z³a liczba, wczytaj kolejn¹");
+                System.out.println("ZÅ‚a liczba, wczytaj kolejnÄ…");
                 liczba = s.nextInt();
             }
             zestaw.add(liczba);
@@ -70,17 +70,17 @@ public class Totolotek {
                 wylosowane++;
             }
         }
-        System.out.println("Wylosowa³eœ " + wylosowane + " liczb");
+        System.out.println("WylosowaÅ‚eÅ› " + wylosowane + " liczb");
     }
 
     public static int iloscLosowan(Set<Integer> losowe) {
-        Set<Integer> zwyciêskie = losuj();
+        Set<Integer> zwycieskie = losuj();
         int liczbaSzans = 0;
-        while (!(losowe.containsAll(zwyciêskie))) {
-            zwyciêskie = losuj();
+        while (!(losowe.containsAll(zwycieskie))) {
+            zwycieskie = losuj();
             liczbaSzans++;
         }
-        System.out.println(zwyciêskie);
+        System.out.println(zwycieskie);
         return liczbaSzans;
     }
 

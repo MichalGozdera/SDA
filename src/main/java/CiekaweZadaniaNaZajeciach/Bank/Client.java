@@ -49,7 +49,7 @@ public class Client {
 
     public void noweKonto() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Zak³adamy konto na lokaty czy na po¿yczki?\n 1 - lokaty\n 2 - po¿yczki");
+        System.out.println("ZakÅ‚adamy konto na lokaty czy na poÅ¼yczki?\n 1 - lokaty\n 2 - poÅ¼yczki");
         String typ = " ";
         switch (s.nextInt()) {
             case 1:
@@ -60,14 +60,14 @@ public class Client {
                 break;
         }
         if (isKonto(typ)) {
-            System.out.println("Masz ju¿ konto typu " + typ);
-            System.out.println("Wybierz inn¹ opcjê");
+            System.out.println("Masz juÅ¼ konto typu " + typ);
+            System.out.println("Wybierz innÄ… opcjÄ™");
             return;
         } else {
             if (typ.equals("saving")) {
-                System.out.println("Ile wp³acasz na pocz¹tek");
+                System.out.println("Ile wpÅ‚acasz na poczÄ…tek");
             } else if (typ.equals("checking")) {
-                System.out.println("Ile chcesz po¿yczyæ");
+                System.out.println("Ile chcesz poÅ¼yczyÄ‡");
             }
             double poczatkowyStan = s.nextDouble();
             if (typ.equals("checking"))

@@ -17,13 +17,13 @@ public class PESEL {
     static boolean isValid(String pesel) throws Exception {
         String komunikat = "";
         if (pesel.length() != 11) {
-            komunikat = "Niepoprawna d³ugoœæ numeru PESEL";
+            komunikat = "Niepoprawna dÅ‚ugoÅ›Ä‡ numeru PESEL";
             throw new Exception(komunikat);
         }
         char[] peselarray = pesel.toCharArray();
         for (char c : peselarray) {
-            if (c < 48 || c > 57) { // cyfry to znaki o wartoœci ASCII od 48 do 57.
-                komunikat = "Nr PESEL powinien zawieraæ tylko liczby";
+            if (c < 48 || c > 57) { // cyfry to znaki o wartoÅ›ci ASCII od 48 do 57.
+                komunikat = "Nr PESEL powinien zawieraÄ‡ tylko liczby";
                 throw new Exception(komunikat);
             }
         }
@@ -32,7 +32,7 @@ public class PESEL {
         }
         int sumakontrola = peselarray[0] * 9 + peselarray[1] * 7 + peselarray[2] * 3 + peselarray[3] + peselarray[4] * 9 + peselarray[5] * 7 + peselarray[6] * 3 + peselarray[7] + peselarray[8] * 9 + peselarray[9] * 7;
         if (sumakontrola % 10 != peselarray[10]) {
-            komunikat = "Z³a suma kontrolna";
+            komunikat = "ZÅ‚a suma kontrolna";
            throw new Exception(komunikat);
         }
         int[] miesiace = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -54,14 +54,14 @@ public class PESEL {
             year += 1800;
             month -= 80;
         } else {
-            komunikat = "Niepoprawny miesi¹c";
+            komunikat = "Niepoprawny miesiÄ…c";
             throw new Exception(komunikat);
         }
         if (isLeapYear(year)) {
             miesiace[1] += 1;
         }
         if (day > miesiace[month - 1]) {
-            komunikat = "Niepoprawny dzieñ";
+            komunikat = "Niepoprawny dzieÅ„";
             throw new Exception(komunikat);
         }
 
@@ -70,9 +70,9 @@ public class PESEL {
 
         String[] sex;
         if (peselarray[9] % 2 == 0) {
-            sex = new String[]{"Kobieta", ", która urodzi siê w dniu ", ", która urodzi³a siê dnia ", " przysz³a na œwiat nowa obywatelka"};
+            sex = new String[]{"Kobieta", ", ktÃ³ra urodzi siÄ™ w dniu ", ", ktÃ³ra urodziÅ‚a siÄ™ dnia ", " przyszÅ‚a na Å›wiat nowa obywatelka"};
         } else {
-            sex = new String[]{"Mê¿czyzna", ", który urodzi siê w dniu ", ", który urodzi³ siê dnia ", " przyszed³ na œwiat nowy obywatel"};
+            sex = new String[]{"MÄ™Å¼czyzna", ", ktÃ³ry urodzi siÄ™ w dniu ", ", ktÃ³ry urodziÅ‚ siÄ™ dnia ", " przyszedÅ‚ na Å›wiat nowy obywatel"};
         }
         if (data.compareTo(dzisiaj) > 0) {
             komunikat = sex[0] + sex[1] + data;

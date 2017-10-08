@@ -16,18 +16,18 @@ public class Zarzadzanie {
                 bank1.odsetki(5);
                 startTime = System.currentTimeMillis();
             }
-            System.out.println("Co chcesz zrobiæ?");
-            System.out.println("1. Jesteœ nowym klientem");
-            System.out.println("2. Zak³adasz nowe konto");
-            System.out.println("3. Zwracasz po¿yczkê");
-            System.out.println("4. Wyjmujesz lokatê");
-            System.out.println("5. Chcesz now¹ po¿yczkê");
-            System.out.println("6. Chcesz za³o¿yæ lokatê");
+            System.out.println("Co chcesz zrobiÄ‡?");
+            System.out.println("1. JesteÅ› nowym klientem");
+            System.out.println("2. ZakÅ‚adasz nowe konto");
+            System.out.println("3. Zwracasz poÅ¼yczkÄ™");
+            System.out.println("4. Wyjmujesz lokatÄ™");
+            System.out.println("5. Chcesz nowÄ… poÅ¼yczkÄ™");
+            System.out.println("6. Chcesz zaÅ‚oÅ¼yÄ‡ lokatÄ™");
             String ops = s.next();
             if (ops.equals("stop"))
                 return;
             else
-                bank1.obs³uga(Integer.parseInt(ops));
+                bank1.obsluga(Integer.parseInt(ops));
 
             System.out.println(bank1);
             bank1.wyswietlKlientow();

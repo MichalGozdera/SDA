@@ -9,9 +9,9 @@ public class Tablica {
     }
         public int[][]wczytaj(){
         Scanner s = new Scanner(System.in);
-        System.out.println("Ile wierszy ma mieæ tablica?");
+        System.out.println("Ile wierszy ma mieÄ‡ tablica?");
         int rows = s.nextInt();
-        System.out.println("Ile kolumn ma mieæ tablica?");
+        System.out.println("Ile kolumn ma mieÄ‡ tablica?");
         int columns = s.nextInt();
         int[][]tab=new int[rows][columns];
 
@@ -19,11 +19,11 @@ public class Tablica {
         {
             for (int j=0;j<tab[i].length;j++)
             {
-                System.out.println("Wczytaj element znajduj¹cy siê w "+ (i+1)+" wierszu i "+(j+1)+" kolumnie");
+                System.out.println("Wczytaj element znajdujÄ…cy siÄ™ w "+ (i+1)+" wierszu i "+(j+1)+" kolumnie");
                 tab[i][j]=s.nextInt();
             }
         }
-            System.out.println("Tablica wygl¹da tak:");
+            System.out.println("Tablica wyglÄ…da tak:");
             for (int i=0;i<tab.length;i++)
             {
                 for (int j=0;j<tab[i].length;j++)
